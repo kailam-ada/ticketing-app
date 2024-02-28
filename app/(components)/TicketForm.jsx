@@ -101,7 +101,7 @@ const TicketForm = ({ticket}) => {
         >
           <option value="Hardware Problem">Hardware Problem</option>
           <option value="Software Problem">Software Problem</option>
-          <option value="Project Problem">Project</option>
+          <option value="Project">Project</option>
         </select>
 
         <label>Priority</label>
