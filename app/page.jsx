@@ -3,14 +3,20 @@ import TicketCard from "./(components)/TicketCard";
 
 const getTickets = async () => {
   try {
-    const res = await fetch("http:localhost:3000/api/Tickets", {
-      cache: "no-store"
+    const res = await fetch("http://localhost:3000/api/Tickets", {
+      cache: "no-store",
     });
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch topics");
+    }
+
     return res.json();
   } catch (error) {
-    console.log("Failed to get tickets", error);
+    console.log("Error loading topics: ", error);
   }
-}
+};
+
 
 const Dashboard = async () => {
 
@@ -26,7 +32,7 @@ const Dashboard = async () => {
   const uniqueCategories = [
     ...new Set(tickets?.map(({ category }) => category)),
   ];
-  
+
   return (
     <div className="p-5">
         <div>

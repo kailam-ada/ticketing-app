@@ -12,6 +12,7 @@ const ticketSchema = new Schema (
         progress: Number,
         status: String,
         active: Boolean,
+        createdBy: { type: Schema.Types.ObjectId, ref: 'User' }, // Reference to the user who created the ticket
     },
     {
         timestamps: true,
