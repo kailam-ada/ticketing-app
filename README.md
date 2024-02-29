@@ -3,7 +3,7 @@
 
 ## About the project
 <p>
-The aim was to create a fullstack project using the Next.<br/>
+The aim was to create a fullstack project using Next.<br/>
 For this project I tried to make a ticketing app.<br/>
 Database: Mongo DB
 </p>
@@ -14,7 +14,7 @@ Database: Mongo DB
 
 ## Deployment
 
-The project is live ! [Check it out !](https://kai-airbnb-clone.vercel.app/)
+The project is live ! [Check it out !](https://ticketing-app-by-kai.vercel.app/)
 
 ## Documentation
 

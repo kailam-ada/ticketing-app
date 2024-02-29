@@ -22,7 +22,7 @@ const TicketForm = ({ticket}) => {
     e.preventDefault();
 
     if (EDITMODE) {
-      const res = await fetch(`https://ticketing-app-by-kai.vercel.app/api/Tickets/${ticket._id}`, {
+      const res = await fetch(`/api/Tickets/${ticket._id}`, {
         method: "PUT",
         body: JSON.stringify({ formData }),
         "Content-Type": "application/json",

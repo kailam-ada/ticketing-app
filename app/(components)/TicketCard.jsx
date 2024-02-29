@@ -31,7 +31,7 @@ const TicketCard = ({ticket}) => {
           <DeleteBlock id={ticket._id} />
         </div>
       </div>
-      <Link href={`https://ticketing-app-by-kai.vercel.app/api/Tickets/${ticket._id}`} style={{}}>
+      <Link href={`/api/Tickets/${ticket._id}`} style={{}}>
       <h4>{ticket.title}</h4>
       <hr className="h-px border-0 bg-page mb-2" />
       <p className="whitespce-pre-wrap">
