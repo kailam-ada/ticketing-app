@@ -1,24 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ticketing App
+<!-- ABOUT THE PROJECT -->
 
-## Getting Started
+## About the project
+<p>
+The aim was to create a fullstack project using the Next.<br/>
+For this project I tried to make a ticketing app.<br/>
+Database: Mongo DB
+</p>
 
-First, run the development server:
+## Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+***Coming soon !***
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The project is live ! [Check it out !](https://kai-airbnb-clone.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
+## Documentation
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -32,3 +30,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Author
+
+Hello! I'm Kai!<br/>
+I'm a student at Ada Tech School, an inclusive and feminist school where I work on group projects and learn autonomously.<br/>
+I'm currently looking for an **apprenticeship**.
+
+[![GitHub kailam-ada](https://img.shields.io/github/followers/kailam-ada)](https://github.com/kailam-ada)
+[![Linkedin: kai-lam](https://img.shields.io/badge/-kailam-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kai-lam)](https://linkedin.com/in/kai-lam)
