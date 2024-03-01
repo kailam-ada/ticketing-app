@@ -74,8 +74,8 @@ const TicketForm = ({ticket}) => {
         method="post"
         onSubmit={handleSubmit}
       >
-        <h3>{ EDITMODE ? "Update your Ticket" : "Create Your Ticket"}</h3>
-        <label>Title</label>
+        <h3 className="text-blue-600">{ EDITMODE ? "Update your Ticket" : "Create Your Ticket"}</h3>
+        <label className="text-blue-600">Title</label>
         <input
           id="title"
           name="title"
@@ -84,7 +84,7 @@ const TicketForm = ({ticket}) => {
           required={true}
           value={formData.title}
         />
-        <label>Description</label>
+        <label className="text-blue-600">Description</label>
         <textarea
           id="description"
           name="description"
@@ -93,7 +93,7 @@ const TicketForm = ({ticket}) => {
           value={formData.description}
           rows="5"
         />
-        <label>Category</label>
+        <label className="text-blue-600">Category</label>
         <select
           name="category"
           value={formData.category}
@@ -104,7 +104,7 @@ const TicketForm = ({ticket}) => {
           <option value="Project">Project</option>
         </select>
 
-        <label>Priority</label>
+        <label className="text-blue-600">Priority</label>
         <div>
           <input
             id="priority-1"
@@ -114,7 +114,7 @@ const TicketForm = ({ticket}) => {
             value={1}
             checked={formData.priority == 1}
           />
-          <label>1</label>
+          <label className="text-blue-600">1</label>
           <input
             id="priority-2"
             name="priority"
@@ -123,7 +123,7 @@ const TicketForm = ({ticket}) => {
             value={2}
             checked={formData.priority == 2}
           />
-          <label>2</label>
+          <label className="text-blue-600">2</label>
           <input
             id="priority-3"
             name="priority"
@@ -132,7 +132,7 @@ const TicketForm = ({ticket}) => {
             value={3}
             checked={formData.priority == 3}
           />
-          <label>3</label>
+          <label className="text-blue-600">3</label>
           <input
             id="priority-4"
             name="priority"
@@ -141,7 +141,7 @@ const TicketForm = ({ticket}) => {
             value={4}
             checked={formData.priority == 4}
           />
-          <label>4</label>
+          <label className="text-blue-600">4</label>
           <input
             id="priority-5"
             name="priority"
@@ -150,9 +150,9 @@ const TicketForm = ({ticket}) => {
             value={5}
             checked={formData.priority == 5}
           />
-          <label>5</label>
+          <label className="text-blue-600">5</label>
         </div>
-        <label htmlFor="">Progress</label>
+        <label className="text-blue-600">Progress</label>
         <input
           type="range"
           id="progress"
@@ -162,7 +162,7 @@ const TicketForm = ({ticket}) => {
           max="100"
           onChange={handleChange}
         />
-        <label htmlFor="">Status</label>
+        <label className="text-blue-600">Status</label>
         <select
           name="status"
           id=""
