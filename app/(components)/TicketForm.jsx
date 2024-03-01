@@ -70,7 +70,7 @@ const TicketForm = ({ticket}) => {
   return (
     <div className="flex justify-center">
       <form
-        className="flex flex-col gap-3 w-1/2"
+        className="flex flex-col gap-3 w-1/2 shadow-md"
         method="post"
         onSubmit={handleSubmit}
       >
@@ -83,6 +83,7 @@ const TicketForm = ({ticket}) => {
           onChange={handleChange}
           required={true}
           value={formData.title}
+          className="shadow-inner"
         />
         <label className="text-blue-600">Description</label>
         <textarea
@@ -92,12 +93,14 @@ const TicketForm = ({ticket}) => {
           required={true}
           value={formData.description}
           rows="5"
+          className="shadow-inner"
         />
         <label className="text-blue-600">Category</label>
         <select
           name="category"
           value={formData.category}
           onChange={handleChange}
+          className="shadow-inner"
         >
           <option value="Hardware Problem">Hardware Problem</option>
           <option value="Software Problem">Software Problem</option>
@@ -168,6 +171,7 @@ const TicketForm = ({ticket}) => {
           id=""
           value={formData.status}
           onChange={handleChange}
+          className="shadow-inner"
         >
           <option value="not started">Not Started</option>
           <option value="started">Started</option>

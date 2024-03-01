@@ -24,7 +24,7 @@ const TicketCard = ({ticket}) => {
   }
 
   return (
-    <div className="flex flex-col bg-card hover:bg-card-hover rounded-md shadow-md p-3 m-2">
+    <div className="flex flex-col bg-card hover:bg-card-hover hover:text-white rounded-md shadow-md p-3 m-2">
       <div className="flex mb-3">
         <PriorityDisplay priority={ticket.priority} />
         <div className="ml-auto">
@@ -33,7 +33,7 @@ const TicketCard = ({ticket}) => {
       </div>
       <Link href={`/TicketPage/${ticket._id}`} style={{}}>
       <h4>{ticket.title}</h4>
-      <hr className="h-px border-0 bg-page mb-2" />
+      <hr className="h-px border-0 bg-black mb-2" />
       <p className="whitespce-pre-wrap">
         {ticket.description}
       </p>
