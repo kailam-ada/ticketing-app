@@ -1,7 +1,7 @@
 import Ticket from "@/app/(models)/Ticket";
 import { NextResponse } from "next/server";
 
-export async function POST(req) {
+export async function POST(req: Request) {
   console.log("POST RAN");
   try {
     const body = await req.json();
@@ -14,7 +14,7 @@ export async function POST(req) {
   }
 }
 
-export async function GET(req) {
+export async function GET(req: Request) {
   try {
     const tickets = await Ticket.find();
     
