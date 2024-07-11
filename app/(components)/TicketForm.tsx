@@ -2,13 +2,14 @@
 
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import { TicketType } from "../typescript/TicketType";
 
-const TicketForm = ({ticket}) => {
+const TicketForm = ({ticket}: {ticket: TicketType}) => {
 
-  const EDITMODE = ticket._id === "new" ? false : true
+  const EDITMODE = ticket._id !== "new"
   const router = useRouter();
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const value = e.target.value;
     const name = e.target.name;
 
@@ -18,14 +19,16 @@ const TicketForm = ({ticket}) => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (EDITMODE) {
       const res = await fetch(`https://ticketing-app-by-kai.vercel.app/api/Tickets/${ticket._id}`, {
         method: "PUT",
-        body: JSON.stringify({ formData }),
-        "Content-Type": "application/json",
+        body: JSON.stringify(formData), // update this line
+        headers: { "Content-Type": "application/json" }, // add this line
+        // body: JSON.stringify({ formData }),
+        // "Content-Type": "application/json",
       });
   
       if (!res.ok) {
@@ -34,8 +37,10 @@ const TicketForm = ({ticket}) => {
     } else {
       const res = await fetch("/api/Tickets", {
         method: "POST",
-        body: JSON.stringify({ formData }),
-        "Content-Type": "application/json",
+        body: JSON.stringify(formData), // update this line
+        headers: { "Content-Type": "application/json" }, // add this line        
+        // body: JSON.stringify({ formData }),
+        // "Content-Type": "application/json",
       });
   
       if (!res.ok) {
@@ -92,7 +97,7 @@ const TicketForm = ({ticket}) => {
           onChange={handleChange}
           required={true}
           value={formData.description}
-          rows="5"
+          rows={5}
           className="shadow-inner"
         />
         <label className="text-blue-600">Category</label>

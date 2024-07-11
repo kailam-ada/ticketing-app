@@ -1,10 +1,10 @@
 "use client";
 
-import { faCircleXmark, faSquareXmark, faX } from "@fortawesome/free-solid-svg-icons"
+import { faSquareXmark } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from "next/navigation";
 
-const DeleteBlock = ({ id }) => {
+const DeleteBlock = ({ id }: { id: string }) => {
   const router = useRouter();
 
   const deleteTicket = async () => {

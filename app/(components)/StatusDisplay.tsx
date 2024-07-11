@@ -1,6 +1,6 @@
-const StatusDisplay = ({status}) => {
+const StatusDisplay = ({status} : {status : string}) => {
 
-const getColor = (status) => {
+const getColor = (status : string) => {
   let color = "bg-slate-700";
   switch (status.toLowerCase()) {
     case "done":

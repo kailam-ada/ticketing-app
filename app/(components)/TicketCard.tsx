@@ -3,12 +3,17 @@ import DeleteBlock from "./DeleteBlock";
 import PriorityDisplay from "./PriorityDisplay";
 import ProgressDisplay from "./ProgressDisplay";
 import StatusDisplay from "./StatusDisplay";
+import { TicketType } from "../typescript/TicketType";
 
+type TicketCardProps = {
+  id: number,
+  ticket: TicketType;
+}
 
-const TicketCard = ({ticket}) => {
+const TicketCard: React.FC<TicketCardProps> = ({ticket}) => {
 
-  const formatTimestamp = (timestamp) => {
-    const options = {
+  const formatTimestamp = (timestamp: Date) => {
+    const options: Intl.DateTimeFormatOptions = {
       year: "numeric",
       month: "2-digit",
       day: "2-digit",
