@@ -8,9 +8,10 @@ For this project I tried to make a ticketing app.<br/>
 Database: Mongo DB
 </p>
 
-## Demo
+## News
 
-***Coming soon !***
+**11/07/2024** : First major update.
+I migrated the project to TypeScript.
 
 ## Deployment
 
@@ -22,6 +23,7 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [TypeScript documentation](https://www.typescriptlang.org/)
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
